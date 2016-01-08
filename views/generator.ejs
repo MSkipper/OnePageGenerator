@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OPG</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <div id="sidebar-menu">
+            <div class="trash-container" id="delete-objects">
+                <span id="trash" class="fa fa-ban"></span>
+            </div>
+            <ul class="sidebar-nav" id="main-menu">
+                <li class="sidebar-nav-border">
+                    <a id="m1" data-menu-item="headers" href="#">Headers</a>
+                </li>
+                <li class="sidebar-nav-border">
+                    <a id="m2" data-menu-item="contents"  href="#">Contents</a>
+                </li >
+                <li class="sidebar-nav-border">
+                    <a id="m3" data-menu-item="cotacts" href="#">Contacts</a>
+                </li>
+                <li class="sidebar-nav-border">
+                    <a id="m4" data-menu-item="teams" href="#">Team</a>
+                </li>
+                <li class="sidebar-nav-border">
+                    <a id="m5" data-menu-item="footers" href="#">Footers</a>
+                </li>
+                <li class="sidebar-nav-border">
+                    <a id="m6" data-menu-item="prices" href="#">Price Table</a>
+                </li>
+                <li class="sidebar-nav-border">
+                    <a id="m7" data-menu-item="projects"  href="#">Projects</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    <div id="extended-sidebar-wrapper">
+        <ul id="s1" class="extended-sidebar-nav">
+            <% for(var i=0; i<m1.length; i++) {%>
+            <li class="ui-draggable">
+                 <img src="<%=m1[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s2" class="extended-sidebar-nav">
+            <% for(var i=0; i<m2.length; i++) {%>
+            <li>
+                 <img src="<%=m2[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s3" class="extended-sidebar-nav">
+            <% for(var i=0; i<m3.length; i++) {%>
+            <li>
+                 <img src="<%=m3[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s4" class="extended-sidebar-nav">
+            <% for(var i=0; i<m4.length; i++) {%>
+            <li>
+                 <img src="<%=m4[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s5" class="extended-sidebar-nav">
+            <% for(var i=0; i<m5.length; i++) {%>
+            <li>
+                 <img src="<%=m5[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s6" class="extended-sidebar-nav">
+            <% for(var i=0; i<m6.length; i++) {%>
+            <li>
+                <img src="<%=m6[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+        <ul id="s7" class="extended-sidebar-nav">
+            <% for(var i=0; i<m7.length; i++) {%>
+            <li>
+                 <img src="<%=m7[i]%>" />
+            </li>
+            <% } %>
+        </ul>
+    </div>
+<div id="page-content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="content" class="col-lg-10">
+                <h1>Create Your Project </h1>
+                <div class="drop " id="drop-place">
+                    <ul id="drop-list">
+                        <li class="placeholder text-muted text-center"><h3>Place your components Here</h3></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center send-it">
+            <button class="btn btn-danger"  onclick="parseToHTML()">Download Your Site</button>
+        </div>
+    </div>
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+<script>
+    var categorySize = 7; //size of menu category
+    var sendId = []; // Final Array Sending to Server
+    var position = 0; // add unique id to img
+
+    // menu listener
+    function menuListener(id){
+        var option = "#m" + id;
+        $(option).hover(function(){
+                $('#extended-sidebar-wrapper').show();
+                hideOtherLists(id);
+            });
+    }
+    $("#page-content-wrapper").hover(function(){
+        $('#extended-sidebar-wrapper').hide();
+    });
+
+    //hide all lists, except one
+    function hideOtherLists(id){
+        for(var i = 1; i<=categorySize;i++){
+            var singleList = "#s" + i;
+            $(singleList).hide();
+        }
+        var listToShow = "#s" + id;
+        $(listToShow).show();
+    }
+
+    menuListener(1) || menuListener(2) ||  menuListener(3) ||
+    menuListener(4) || menuListener(5) ||  menuListener(6) ||
+    menuListener(7);
+
+
+    //menu dragAndDrop
+    function dragAndDrop(id) {
+
+        var dId = "#s" + id + " li";
+        $(dId).draggable({
+            containment: "window",
+            opacity: 0.5,
+            cursor: 'move',
+            revert: "invalid",
+            scroll: false,
+            appendTo: 'body',
+            zIndex: 1000,
+            helper: "orginal"
+        });
+        $("#drop-list").droppable({
+            activeClass: "ui-state-default",
+            hoverClass: "ui-state-hover",
+            accept: ":not(.ui-sortable-helper)",
+
+            drop: function (event, ui) {
+                $(this).find(".placeholder").remove();
+                var imgSrc = ui.draggable.children().attr("src");
+                var imgId = imgSrc.slice(13, 16);
+                var helper = position +"-"+imgId;
+                position++; //itearate unique ID
+                $("<img />").attr("src", imgSrc).attr("id", helper).attr("data-id", imgId).appendTo(this);
+                $("#" + helper).wrap("<li></li>");
+                checkPosition();
+            }
+        }).sortable({
+            items: "li:not(.placeholder)",
+            cursor: 'move',
+            placeholder: "placeholder",
+            refreshPositions: true,
+            scrollSensitivity: 10,
+            sort: function (event, ui) {
+                $(this).removeClass("ui-state-default");
+                $("#delete-objects").show();
+            },
+            stop: function (event, ui){
+                checkPosition();
+                $("#delete-objects").hide();
+            }
+        });
+    }
+
+    //trash
+    $("#delete-objects").droppable({
+        accept: "#drop-list li",
+        hoverClass: "ui-trash-hover",
+        drop: function(event, ui) {
+            $(ui.draggable).remove();
+            checkPosition();
+            $("#delete-objects").hide("slow");
+            if(sendId.length == 0){
+                $('#drop-list').append('<li class=\"placeholder text-muted text-center\"><h3>Place your components Here</h3></li>');
+            }
+        }
+
+    })
+
+    function checkPosition(){
+        sendId = [];
+        $.map($("#drop-list").children('li').children('img'), function(el){
+            sendId.push( $(el).data('id') );
+        });
+        console.log(sendId);
+
+    }
+
+    dragAndDrop(1) || dragAndDrop(2) || dragAndDrop(3) ||
+    dragAndDrop(4) || dragAndDrop(5) || dragAndDrop(6) ||
+    dragAndDrop(7)
+
+    //Sending data to server
+    function parseToHTML(){
+        window.location = 'download' + '/' + sendId;
+    }
+
+
+</script>
+</body>
+</html>

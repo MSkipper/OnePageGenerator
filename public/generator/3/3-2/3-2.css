@@ -1,0 +1,100 @@
+.contact-2{
+	padding-top: 40px;
+	margin: 20px 30px;
+}
+
+.contact-2 fieldset{
+
+  		margin: 0 2px;
+ 	 	border: 1px solid #c0c0c0;
+		padding: 30px;
+}
+
+
+
+.contact-2 form input[type="text"] {
+
+	font-family: 'open_sansregular';
+	margin:20px 0;
+	box-shadow: none;
+	border: 1px solid #c0c0c0;
+	line-height:1.8em;
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+}
+
+.contact-2 form textarea{
+	width: 100%;
+	resize: none;
+	height: 60px;
+}
+
+@media(min-width: 990px){
+	.contact-2 form input[type="text"] {
+		width: 350px;
+	}
+.contact-2 form textarea{
+	width: 350px;
+
+}
+
+.contact-2 form{
+	margin-left: 40px;
+}
+
+}
+
+.contact-2 form button{
+	width: 40%;
+	
+}
+.contact-2 form i{
+	text-align: center;
+	
+}
+
+.contact-2 .right-section p{
+	margin-top: 10px
+}
+
+.contact-2 .right-section h4{
+	margin-top: 10px;
+}
+
+.contact-2 .address li{
+	display: block;
+	margin: 10px  0;
+}
+.contact-2 .address li i{
+	color:#2EB398;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.contact-2 .address{
+	padding-top: 10px;
+	margin-top: 20px;
+}
+.contact-2 .address li span{
+	color: black;
+	font-size: 14px;
+	margin-left: 15px;
+}
+.contact-2 .address li a{
+	color: black;
+	font-size: 14px;
+	margin-left: 8px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.contact-2 .address li a:hover{
+	text-decoration:none;
+	color:#2EB398;
+}
+#map {
+        width: 300px;
+        height:160px;
+      }

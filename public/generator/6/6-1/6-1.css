@@ -1,0 +1,50 @@
+.price-1{
+	padding-top: 90px
+
+}
+
+.price-1 .price-table{
+	margin-left:auto; 
+    margin-right:auto;
+    width: 85%;
+        border: 2px solid #7DD6C5;
+}
+
+.table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+	 border: 2px solid #7DD6C5;
+}
+
+.price-1 .price-table h1, h2{
+	color:white;
+}
+
+.price-1 .mid-row {
+	text-align: left;
+
+}
+.price-1 .mid-row  p, h3 {
+	margin: 20px;
+
+}
+
+.price-1 .mid-row h3{
+	font-style: bold;
+	font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #61D2BD;
+}
+
+.price-1 .upper-row {
+	background-color: #61D2BD;
+    border: 2px solid #61D2BD;
+}
+
+.price-1 .terms{
+	padding-top: 25px;
+	font-size: 11px;
+
+}
+.price-1 .terms a{
+	color:#61D2BD;
+	
+}
+

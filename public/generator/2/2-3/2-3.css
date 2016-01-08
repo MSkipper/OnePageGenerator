@@ -1,0 +1,18 @@
+body{
+
+	overflow-x: hidden;
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif; 
+}
+
+.content-3 {
+	padding-top: 50px;
+}
+
+.content-3 .single-text{
+	margin:30px;
+	padding-bottom: 100px;
+}
+
+.content-3 .intro-text{
+	padding-bottom: 40px;
+}

@@ -1,0 +1,88 @@
+.crew-3 h2{
+	padding-top: 10px;
+}
+.crew-3 .team{
+	padding-top: 10px;
+}
+.crew-3 progress, progress[role] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background-size: auto;
+  height: 15px;
+  width: 90%;
+}
+
+.crew-3 .single-member{
+	margin:30px 45px;
+}
+
+.crew-3 .single-member img{
+	float:right;
+}
+
+.crew-3 .single-member h4{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.crew-3 .skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+
+.crew-3 .skill {
+  margin-bottom: 1em;
+  position: relative;
+  h3 {
+    color: #fff;
+    font-size: 2em;
+    font-family: "Helvetica Neue", arial, sans-serif;
+    left: 1em;
+    line-height: 1;
+    position: absolute;
+    top: 1em;
+  }
+  }
+
+
+
+.crew-3 .skill-1::-webkit-progress-value {
+  background: #ff9e2c;
+}
+
+.crew-3 .skill-1::-moz-progress-bar {
+  background: #ff9e2c;
+}
+
+.crew-3 .skill-2::-webkit-progress-value {
+  background: #4ecdc4;
+}
+
+.crew-3 .skill-2::-moz-progress-bar {
+  background: #4ecdc4;
+}
+
+.crew-3 .skill-3::-webkit-progress-value {
+  background: #ff6b6b;
+}
+
+.crew-3 .skill-3::-moz-progress-bar {
+  background: #ff6b6b;
+}
+
+.crew-3 hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.crew-3 .single-member .social-buttons{
+	text-align: right;
+	float: right;
+	font-size: 24px;
+}

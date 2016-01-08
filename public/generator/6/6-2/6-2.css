@@ -1,0 +1,17 @@
+.price-2{
+	padding-top: 100px;
+}
+
+.price-2 .single-tab{
+	border: 2px dotted #61D2BD;
+	margin: 30px;
+}
+
+.price-2 .single-tab ul{
+	list-style: none;
+	padding: 10px;
+}
+
+.price-2 .single-tab button{
+	margin-bottom: 30px;
+}

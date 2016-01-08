@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+		
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="../../Style/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Custom CSS -->
+	<link href="3-1.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+		<section id="contact" class="contact-1">
+		
+<div class="container">
+	<div class="row con">
+		<div class="col-md-8 contact_left">
+			<h3>Write to me</h3>
+			<p>Use form:</h4>
+		<form method="post" action="mail.php">
+				<input type="text" value="Name(required)" name='name' onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+				<input type="text" value="Email (required)" id='email' name='email' onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+				<input type="text" value="Subject" name='topic' id='topic' onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+				<textarea name='message' id='message' onfocus="if(this.value == 'Enter your message here...') this.value='';" onblur="if(this.value == ''){this.value='Enter your message here...;}" >Enter your message here...</textarea>
+				<input name="submit" type="submit" value="Send" />
+		</form>
+		</div>
+		<div class="col-md-4  contact_right">
+			<p><span>Or if you don not like form. You can use one of these ways of contact:</span> </p>
+			<ul class="list-unstyled address">
+				<li><i class="fa fa-phone"></i><span>333 702 333</span></li>
+				<li><i class="fa fa-envelope"></i><a href="mailto:l.asdasd@o2.pl">l.d@onet.pl</a></li>
+			</ul>
+</div>
+
+			</div>
+		</section>
+
+	<!-- jQuery Version 1.11.0 -->
+	<script src="../../Js/jquery-1.11.0.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

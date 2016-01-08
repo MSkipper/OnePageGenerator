@@ -1,0 +1,41 @@
+.footer-2{
+	background-color: #7DD6C5;
+	font-style: bold;
+	color: white;
+	
+}
+
+.footer-2 .nav-line{
+	padding-top: 15px;
+	display: inline-block;
+}
+
+.footer-2 .terms{
+	padding-top: 15px;
+	display: inline-block;
+	color: white;
+}
+
+.footer-2 .social-buttons{
+	padding-top: 15px;
+	float: right;
+}
+
+.footer-2 .social-buttons a{
+	color: #ddd;
+	display: inline-block;
+}
+
+.footer-2 a{
+	color: white;
+}
+
+.footer-2 p{
+		text-align: center;
+}
+
+@media(max-width: 990px){
+.footer-2 .social-buttons{
+	float: left;
+}
+}

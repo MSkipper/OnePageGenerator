@@ -1,0 +1,26 @@
+.price-3 {
+	padding-top: 130px;
+}
+
+.price-3 .single-tab ul{
+	list-style: none;
+	padding: 10px;
+}
+
+.price-3 .single-tab button{
+	margin-bottom: 30px;
+}
+
+.price-3 .single-tab span{
+	text-align: center;
+	font-size: 30px;
+
+}
+
+@media(min-width: 985px){
+	.price-3 .center-tab{
+	border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;	
+}
+}
+

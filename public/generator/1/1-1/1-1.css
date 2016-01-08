@@ -1,0 +1,73 @@
+#header-1{
+	background-image: url(public/header.jpg);
+	background-position: center center fixed;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    min-height: 660px;
+}
+
+header .header-text{
+	padding-top : 50px;
+	text-align: left;
+	color: black;
+	opacity: 0.8;
+}
+
+header .header-button{
+	padding-top: 130px;
+	text-align: center;
+}
+
+header .page-scroll{
+	color: black;
+	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.nav>li>a:focus{
+	background-color: transparent;
+
+}
+.nav>li>a:hover{
+	background-color: transparent;
+	color: #2CACD3;
+}
+
+
+header .header-text{
+	font-style: italic;
+	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+header .header-navbar .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+
+.navbar-collapse.in {
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.47);
+    text-align: center;
+    border-color: rgba(80, 187, 220, 0.47);
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+}
+
+@media(min-width:768px){
+	.navbar-collapse.in {
+    overflow-y: auto;
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+}
+
+}

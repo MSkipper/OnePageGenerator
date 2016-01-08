@@ -1,0 +1,81 @@
+.project-2 .top-div{
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+
+.project-2 .single-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+.project-2 .single-item .single-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.project-2 .single-item .single-link .single-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(254,209,54,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.project-2 .single-item .single-link .single-hover:hover {
+    opacity: 1;
+}
+
+.project-2 .single-item .single-link .single-hover .single-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.project-2.single-item .single-link .single-hover .single-hover-content i {
+    margin-top: -12px;
+}
+
+.project-2  .single-item .single-link .single-hover .single-hover-content h3,
+.project-2  .single-item .single-link .single-hover .single-hover-content h4 {
+    margin: 0;
+}
+
+.project-2  .single-item .single-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.project-2  .single-item .single-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+.project-2  .single-item .single-caption p {
+    margin: 0;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.project-2 * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    .project-2  .single-item {
+        margin: 0 0 30px;
+    }
+}

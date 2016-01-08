@@ -1,0 +1,55 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+video { display: block; }
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(nyc.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
+#header-2 .header-button{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#header-2 .header-counter{
+    padding-top: 100px;
+    text-align: center;
+    color: white; 
+    width: 30%;
+    height: 30%;
+    display: table;
+    margin: 0 auto;
+}
+
+#header-2 .header-counter .counter{
+    background-color: black;
+    opacity: 0.85;
+    padding: 10px;
+}
+
+#header-2 .header-counter .counter .counter-display{
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    opacity: 1.0;
+    color: white;
+    font-size: 40px;
+
+}

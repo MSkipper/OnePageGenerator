@@ -1,0 +1,27 @@
+.crew-2 h1{
+
+	padding-top: 25px;
+	padding-bottom: 20px;
+	margin-left: 15px;
+}
+
+.crew-2 .single-member img{
+
+}
+
+.crew-2 .single-member p{
+	padding-top: 15px;
+
+}
+
+.crew-2 .single-member .social-buttons{
+	font-size: 15px;
+	text-align: center;
+
+
+}
+
+.crew-2 .single-member hr{
+	size: 5px;
+	color: blue;
+}

@@ -1,0 +1,114 @@
+.contact-1{
+	background: #353535;
+}
+
+.contact-1 .con{
+	padding: 6%;
+}
+.contact-1 .contact_left h3{
+	font-family: 'Kreon', serif;
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+.contact-1 .contact_left p{
+	font-size: 14px;
+	color: #999999;
+	line-height: 1.5em;
+}
+.contact-1 .contact_left form input[type="text"],.contact_left form textarea{
+	font-family: 'open_sansregular';
+	margin:20px 0;
+	box-shadow: none;
+	border: 1px solid #303030;
+	background:#454545;
+	color: #9C9C9C;
+	line-height:1.8em;
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	outline:none;
+	-webkit-appearance:none;
+	transition: border-color 0.3s;
+	-o-transition: border-color 0.3s;
+	-ms-transition: border-color 0.3s;
+	-moz-transition: border-color 0.3s;
+	-webkit-transition: border-color 0.3s;
+}
+.contact-1 .contact_left form textarea{
+	resize: none;
+	height: 160px;
+}
+.contact-1 .contact_left form input[type="text"]:focus,.contact_left form textarea:focus{
+	border: 1px solid #2EB398;	
+}
+.contact-1 .contact_left form input[type="text"]:hover,.contact_left form textarea:hover{
+	border-color: #2EB398;
+}
+.contact-1 .contact_right {
+	margin-top: 8%;
+}
+.contact-1 .contact_right p{
+	color: #c9c9c9;
+	font-size: 13px;
+	line-height: 1.8em;
+	margin: 5px 0 0;
+	text-align: justify;
+}
+.contact-1 .contact_right span{
+	color: #ffffff;
+	font-size: 14px;
+	-webkit-text-stroke: 0.2px;
+}
+.contact-1 .address li{
+	display: block;
+	margin: 10px  0;
+}
+.contact-1 .address li i{
+	color:#2EB398;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.contact-1 .address{
+	margin-top: 20px;
+}
+.contact-1 .address li span{
+	color: #f0f0f0;
+	font-size: 14px;
+	margin-left: 15px;
+}
+.contact-1 .address li a{
+	color: #f0f0f0;
+	font-size: 14px;
+	margin-left: 8px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.contact-1 .address li a:hover{
+	text-decoration:none;
+	color:#2EB398;
+}
+.contact-1 .contact_left form input[type="submit"] {
+	font-family: 'open_sansregular';
+	-webkit-appearance: none;
+	cursor: pointer;
+	outline: none;
+	background: #2EB398;
+	border-radius: 30%;
+	text-transform: uppercase;
+	font-weight: 100;
+	border: none;
+	color: #ffffff;
+	padding: 14px 24px;
+	font-size: 13px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.contact-1 .contact_left form input[type="submit"]:hover{
+	background: #2B9C85;
+}

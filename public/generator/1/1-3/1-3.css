@@ -1,0 +1,94 @@
+
+#header-3{
+    margin-top: 30px;
+	background-image: url(public/company.jpg);
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover; 
+
+}
+
+#header-3 .header-text{
+	padding-top: 80px;
+	text-align: center;
+	color: black;
+
+}
+
+#header-3 .social-buttons{
+	padding-top: 200px;
+
+}
+
+#header-3 .social-buttons{
+	text-align: center;
+	font-size: 40px;
+
+}
+
+#header-3 .social-buttons li{
+	border: 3px solid #335472;
+    border-radius: 16px 0px;
+    background-color: black;
+    opacity:0.5;
+    width: 73px;
+}
+
+
+.navbar-default .navbar-brand {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: blue;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: white;
+}
+
+.navbar-default .nav li a {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    outline: 0;
+    color: blue;
+}
+
+
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 5px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+}
